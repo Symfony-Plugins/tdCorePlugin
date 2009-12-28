@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package packagerversion="1.4.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
-  <name>tdVisitorCounterPlugin</name>
+  <name>tdCorePlugin</name>
   <channel>plugins.symfony-project.org</channel>
-  <summary>Provides funcionalities for easy visitor counting feature.</summary>
-  <description>Provides funcionalities for easy visitor counting feature, including schema, libs, interface and a flash panel to display latest visiting stats. This plugin is a part of TD CMS and is based on Doctrine ORM.</description>
+  <summary>Provides basic functionalities enabling TD CMS.</summary>
+  <description>Provides basic functionalities enabling TD CMS, such as common configuration or random data generation.</description>
  <lead>
   <name>Tomasz Ducin</name>
   <user>tkoomzaaskz</user>

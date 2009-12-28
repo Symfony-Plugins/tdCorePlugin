@@ -103,7 +103,7 @@ class tdRandomDataGenerator {
    */
   public function getRandomName()
   {
-    return $this->names[rand(0,count($this->names)-1)];
+    return $this->names[mt_rand(0,count($this->names)-1)];
   }
 
   /**
@@ -153,12 +153,12 @@ class tdRandomDataGenerator {
     $result = "";
     $space = true;
     for ($i = 0; $i < $length; $i++)
-      if (!$space && !rand(0,5))
+      if (!$space && !mt_rand(0,5))
       {
         $result .= " ";
         $space = true;
       } else {
-        $result .= $this->alphabet[rand(0, strlen($this->alphabet)-1)];
+        $result .= $this->alphabet[mt_rand(0, strlen($this->alphabet)-1)];
         $space = false;
       }
     return $result;
@@ -171,7 +171,7 @@ class tdRandomDataGenerator {
    */
   public function getRandomIP()
   {
-    return rand(0,255).'.'.rand(0,255).'.'.rand(0,255).'.'.rand(0,255);
+    return mt_rand(0,255).'.'.mt_rand(0,255).'.'.mt_rand(0,255).'.'.mt_rand(0,255);
   }
 
   /**
@@ -181,7 +181,7 @@ class tdRandomDataGenerator {
    */
   public function getRandomAgent()
   {
-    switch (rand(0,9))
+    switch (mt_rand(0,9))
     {
       case 0: case 1: case 2: case 3: return 'Firefox';
       case 4: case 5: case 6: return 'Internet Explorer';
@@ -198,7 +198,7 @@ class tdRandomDataGenerator {
    */
   public function getRandomCreatedAt($year)
   {
-    return '\''.$year.'-'.rand(1,12).'-'.rand(1,28).' '.rand(0,23).':'.rand(0,59).':'.rand(0,59);
+    return '\''.$year.'-'.mt_rand(1,12).'-'.mt_rand(1,28).' '.mt_rand(0,23).':'.mt_rand(0,59).':'.mt_rand(0,59);
   }
 }
 ?>

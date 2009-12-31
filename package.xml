@@ -72,6 +72,8 @@
     <license>MIT</license>
     <notes>
      * fixed random numbers generating
+     * upgraded text generation
+     * updated documentation
     </notes>
    </release>
 

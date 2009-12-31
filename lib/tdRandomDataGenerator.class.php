@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * tdRandomDataGenerator class.
+ *
+ * Random data generator used for managing fixtures in TD CMF.
+ *
+ * @package    tdCorePlugin
+ * @author     Tomasz Ducin <tomasz.ducin@gmail.com>
+ */
 class tdRandomDataGenerator {
 
   /**
@@ -150,12 +158,18 @@ class tdRandomDataGenerator {
    */
   public function getRandomText($length)
   {
-    $result = "";
+    $result = strtoupper($this->alphabet[mt_rand(0, strlen($this->alphabet)-1)]);
     $space = true;
-    for ($i = 0; $i < $length; $i++)
+    for ($i = 1; $i < $length; $i++)
       if (!$space && !mt_rand(0,5))
       {
-        $result .= " ";
+        if (mt_rand(0,3) + mt_rand(0,3))
+        {
+          $result .= " ";
+        } else {
+          $result .= ". ".strtoupper($this->alphabet[mt_rand(0, strlen($this->alphabet)-1)]);
+          $i+=2;
+        }
         $space = true;
       } else {
         $result .= $this->alphabet[mt_rand(0, strlen($this->alphabet)-1)];

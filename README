@@ -5,7 +5,7 @@ The `tdVisitorCounterPlugin` is a symfony plugin that provides basic
 functionalities enabling TD CMS, such as common configuration or random data
 generation.
 
-This plugin is a part of __TD CMS__ and is based on __Doctrine ORM__.
+This plugin is a part of __TD CMF__ and is based on __Doctrine ORM__.
 
 Installation
 ============
@@ -45,5 +45,5 @@ example to generate some data in _data/fixtures/sample.yml_ file is shown below:
         author: <?php echo $generator->getRandomName()."\n" ?>
         email: <?php echo $generator->getRandomEmail()."\n" ?>
         http: <?php echo $generator->getRandomHttp()."\n" ?>
-        text: <?php echo $generator->getRandomText(rand(20,100)*rand(1,5))."\n" ?>
+        text: <?php echo $generator->getRandomText(mt_rand(20,100)*mt_rand(1,5))."\n" ?>
     <?php endfor; ?>

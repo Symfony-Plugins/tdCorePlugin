@@ -40,6 +40,15 @@
              <file name="remove.png" role="data" />
              <file name="chart.png" role="data" />
              <file name="stats.png" role="data" />
+             <file name="config.png" role="data" />
+             <file name="audio.png" role="data" />
+             <file name="video.png" role="data" />
+             <file name="media.png" role="data" />
+             <file name="newsletter.png" role="data" />
+             <file name="folder-audio.png" role="data" />
+             <file name="folder-video.png" role="data" />
+             <file name="lock.png" role="data" />
+             <file name="unlock.png" role="data" />
            </dir>
            <dir name="48x48">
              <file name="activate.png" role="data" />
@@ -48,6 +57,15 @@
              <file name="remove.png" role="data" />
              <file name="chart.png" role="data" />
              <file name="stats.png" role="data" />
+             <file name="config.png" role="data" />
+             <file name="audio.png" role="data" />
+             <file name="video.png" role="data" />
+             <file name="media.png" role="data" />
+             <file name="newsletter.png" role="data" />
+             <file name="folder-audio.png" role="data" />
+             <file name="folder-video.png" role="data" />
+             <file name="lock.png" role="data" />
+             <file name="unlock.png" role="data" />
            </dir>
          </dir>
        </dir>

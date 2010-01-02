@@ -2,7 +2,7 @@ tdCorePlugin
 ======================
 
 The `tdVisitorCounterPlugin` is a symfony plugin that provides basic
-functionalities enabling TD CMS, such as common configuration or random data
+functionalities enabling TD CMF, such as common configuration or random data
 generation.
 
 This plugin is a part of __TD CMF__ and is based on __Doctrine ORM__.
@@ -19,14 +19,20 @@ or by using the default symfony plugin install command:
 
     $ ./symfony plugin:install -s beta tdCorePlugin
 
-as the actual release is in its beta stage.
+as the actual release is in its beta stage. Run the following command to enable
+the assets of tdCorePlugin:
+
+    $ ./symfony plugin:publish-assets
 
 Usage
 =====
 
-  * This plugin is the main part of the __TD CMS__ and therefore it should be
+  * This plugin is the main part of the __TD CMF__ and therefore it should be
     installed as the first one. Other td components will use functionalities
     provided with tdCorePlugin.
+
+  * Add __/tdCorePlugin/css/td_core_icons.css__ to your backend/config/view.yml
+    in the css section array to enable admin generator icons.
 
 Random Data Generator
 =====================

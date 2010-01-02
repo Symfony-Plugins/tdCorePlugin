@@ -1,0 +1,11 @@
+/*================== admin : custom action icons ===================*/
+
+#sf_admin_container ul li.sf_admin_action_activate a
+{
+  background: url(/tdCorePlugin/images/icons/activate.png) no-repeat 0 0;
+}
+
+#sf_admin_container ul li.sf_admin_action_deactivate a
+{
+  background: url(/tdCorePlugin/images/icons/deactivate.png) no-repeat 0 0;
+}

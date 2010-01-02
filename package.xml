@@ -10,7 +10,7 @@
   <email>tomasz.ducin@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2009-01-03</date>
+ <date>2009-01-02</date>
  <time>11:00:00</time>
  <version>
    <release>0.1.2</release>
@@ -35,37 +35,47 @@
          <dir name="icons">
            <dir name="16x16">
              <file name="activate.png" role="data" />
-             <file name="deactivate.png" role="data" />
              <file name="add.png" role="data" />
-             <file name="remove.png" role="data" />
-             <file name="chart.png" role="data" />
-             <file name="stats.png" role="data" />
-             <file name="config.png" role="data" />
              <file name="audio.png" role="data" />
-             <file name="video.png" role="data" />
-             <file name="media.png" role="data" />
-             <file name="newsletter.png" role="data" />
+             <file name="chart.png" role="data" />
+             <file name="config.png" role="data" />
+             <file name="deactivate.png" role="data" />
              <file name="folder-audio.png" role="data" />
              <file name="folder-video.png" role="data" />
+             <file name="guestbook.png" role="data" />
              <file name="lock.png" role="data" />
+             <file name="media.png" role="data" />
+             <file name="newsletter.png" role="data" />
+             <file name="notes.png" role="data" />
+             <file name="palette.png" role="data" />
+             <file name="preferences.png" role="data" />
+             <file name="remove.png" role="data" />
+             <file name="stats.png" role="data" />
              <file name="unlock.png" role="data" />
+             <file name="users.png" role="data" />
+             <file name="video.png" role="data" />
            </dir>
            <dir name="48x48">
              <file name="activate.png" role="data" />
-             <file name="deactivate.png" role="data" />
              <file name="add.png" role="data" />
-             <file name="remove.png" role="data" />
-             <file name="chart.png" role="data" />
-             <file name="stats.png" role="data" />
-             <file name="config.png" role="data" />
              <file name="audio.png" role="data" />
-             <file name="video.png" role="data" />
-             <file name="media.png" role="data" />
-             <file name="newsletter.png" role="data" />
+             <file name="chart.png" role="data" />
+             <file name="config.png" role="data" />
+             <file name="deactivate.png" role="data" />
              <file name="folder-audio.png" role="data" />
              <file name="folder-video.png" role="data" />
+             <file name="guestbook.png" role="data" />
              <file name="lock.png" role="data" />
+             <file name="media.png" role="data" />
+             <file name="newsletter.png" role="data" />
+             <file name="notes.png" role="data" />
+             <file name="palette.png" role="data" />
+             <file name="preferences.png" role="data" />
+             <file name="remove.png" role="data" />
+             <file name="stats.png" role="data" />
              <file name="unlock.png" role="data" />
+             <file name="users.png" role="data" />
+             <file name="video.png" role="data" />
            </dir>
          </dir>
        </dir>
@@ -112,7 +122,7 @@
      <api>beta</api>
     </stability>
     <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2009-01-03</date>
+    <date>2009-01-02</date>
     <license>MIT</license>
     <notes>
      * support for admin generators: assets

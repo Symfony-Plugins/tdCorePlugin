@@ -33,8 +33,22 @@
      <dir name="web">
        <dir name="images">
          <dir name="icons">
-           <file name="activate.png" role="data" />
-           <file name="deactivate.png" role="data" />
+           <dir name="16x16">
+             <file name="activate.png" role="data" />
+             <file name="deactivate.png" role="data" />
+             <file name="add.png" role="data" />
+             <file name="remove.png" role="data" />
+             <file name="chart.png" role="data" />
+             <file name="stats.png" role="data" />
+           </dir>
+           <dir name="48x48">
+             <file name="activate.png" role="data" />
+             <file name="deactivate.png" role="data" />
+             <file name="add.png" role="data" />
+             <file name="remove.png" role="data" />
+             <file name="chart.png" role="data" />
+             <file name="stats.png" role="data" />
+           </dir>
          </dir>
        </dir>
        <dir name="css">

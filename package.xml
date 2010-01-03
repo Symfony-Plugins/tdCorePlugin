@@ -10,7 +10,7 @@
   <email>tomasz.ducin@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-01-0x</date>
+ <date>2010-01-03</date>
  <time>11:00:00</time>
  <version>
    <release>0.1.4</release>
@@ -132,9 +132,10 @@
      <api>beta</api>
     </stability>
     <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-01-0x</date>
+    <date>2010-01-03</date>
     <license>MIT</license>
     <notes>
+     * fixed random timestamp data generation bug
      * more icons added
     </notes>
    </release>

@@ -212,7 +212,20 @@ class tdRandomDataGenerator {
    */
   public function getRandomCreatedAt($year)
   {
-    return '\''.$year.'-'.mt_rand(1,12).'-'.mt_rand(1,28).' '.mt_rand(0,23).':'.mt_rand(0,59).':'.mt_rand(0,59);
+    return
+      '\''.
+      $year.
+      '-'.
+      sprintf("%02d", mt_rand(1,12)).
+      '-'.
+      sprintf("%02d", mt_rand(1,28)).
+      ' '.
+      sprintf("%02d", mt_rand(0,23)).
+      ':'.
+      sprintf("%02d", mt_rand(0,59)).
+      ':'.
+      sprintf("%02d", mt_rand(0,59)).
+      '\'';
   }
 }
 ?>

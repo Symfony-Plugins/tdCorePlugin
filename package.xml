@@ -10,10 +10,10 @@
   <email>tomasz.ducin@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-01-03</date>
+ <date>2010-01-16</date>
  <time>11:00:00</time>
  <version>
-   <release>0.1.4</release>
+   <release>0.1.5</release>
    <api>0.1.0</api>
  </version>
  <stability>
@@ -33,34 +33,32 @@
      <dir name="web">
        <dir name="images">
          <dir name="icons">
-           <dir name="16x16">
-             <file name="activate.png" role="data" />
-             <file name="add.png" role="data" />
-             <file name="attach.png" role="data" />
-             <file name="audio.png" role="data" />
-             <file name="chart.png" role="data" />
-             <file name="config.png" role="data" />
-             <file name="deactivate.png" role="data" />
-             <file name="dictionary.png" role="data" />
-             <file name="folder-audio.png" role="data" />
-             <file name="folder-image.png" role="data" />
-             <file name="folder-video.png" role="data" />
-             <file name="guestbook.png" role="data" />
-             <file name="image.png" role="data" />
-             <file name="link.png" role="data" />
-             <file name="lock.png" role="data" />
-             <file name="media.png" role="data" />
-             <file name="newsletter.png" role="data" />
-             <file name="notes.png" role="data" />
-             <file name="palette.png" role="data" />
-             <file name="preferences.png" role="data" />
-             <file name="remove.png" role="data" />
-             <file name="stats.png" role="data" />
-             <file name="unlock.png" role="data" />
-             <file name="users.png" role="data" />
-             <file name="video.png" role="data" />
-           </dir>
-           <dir name="48x48">
+           <file name="activate.png" role="data" />
+           <file name="add.png" role="data" />
+           <file name="attach.png" role="data" />
+           <file name="audio.png" role="data" />
+           <file name="chart.png" role="data" />
+           <file name="config.png" role="data" />
+           <file name="deactivate.png" role="data" />
+           <file name="dictionary.png" role="data" />
+           <file name="folder-audio.png" role="data" />
+           <file name="folder-image.png" role="data" />
+           <file name="folder-video.png" role="data" />
+           <file name="guestbook.png" role="data" />
+           <file name="image.png" role="data" />
+           <file name="link.png" role="data" />
+           <file name="lock.png" role="data" />
+           <file name="media.png" role="data" />
+           <file name="newsletter.png" role="data" />
+           <file name="notes.png" role="data" />
+           <file name="palette.png" role="data" />
+           <file name="preferences.png" role="data" />
+           <file name="remove.png" role="data" />
+           <file name="stats.png" role="data" />
+           <file name="unlock.png" role="data" />
+           <file name="users.png" role="data" />
+           <file name="video.png" role="data" />
+           <dir name="small">
              <file name="activate.png" role="data" />
              <file name="add.png" role="data" />
              <file name="attach.png" role="data" />
@@ -121,6 +119,24 @@
   </phprelease>
 
   <changelog>
+
+   <release>
+    <version>
+     <release>0.1.5</release>
+     <api>0.1.0</api>
+    </version>
+    <stability>
+     <release>beta</release>
+     <api>beta</api>
+    </stability>
+    <license uri="http://www.symfony-project.org/license">MIT license</license>
+    <date>2010-01-16</date>
+    <license>MIT</license>
+    <notes>
+     * sfAdminDashPlugin icons support reorganized
+     * more icons added
+    </notes>
+   </release>
 
    <release>
     <version>

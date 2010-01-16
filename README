@@ -43,12 +43,7 @@ you need to do the following:
   * modify the __sfAdminDashPlugin/config/app.yml__ file, set:
 
         [php]
-        image_dir: /tdCorePlugin/images/icons/48x48/
-
-  * create a symlink from the __tdCorePlugin/images/icons/48x48/__ to __16x16__
-    directory. Execute the following command from project root directory:
-
-        $ ln -s ../16x16/ plugins/tdCorePlugin/web/images/icons/48x48/small
+        image_dir: /tdCorePlugin/images/icons/
 
   * and finally you may use the icons in the app.yml file:
 

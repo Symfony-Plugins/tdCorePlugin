@@ -10,10 +10,10 @@
   <email>tomasz.ducin@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-01-17</date>
+ <date>2010-01-18</date>
  <time>11:00:00</time>
  <version>
-   <release>0.1.6</release>
+   <release>0.1.7</release>
    <api>0.1.0</api>
  </version>
  <stability>
@@ -61,6 +61,7 @@
            <file name="preferences.png" role="data" />
            <file name="remove.png" role="data" />
            <file name="stats.png" role="data" />
+           <file name="text.png" role="data" />
            <file name="unlock.png" role="data" />
            <file name="users.png" role="data" />
            <file name="video.png" role="data" />
@@ -87,6 +88,7 @@
              <file name="preferences.png" role="data" />
              <file name="remove.png" role="data" />
              <file name="stats.png" role="data" />
+             <file name="text.png" role="data" />
              <file name="unlock.png" role="data" />
              <file name="users.png" role="data" />
              <file name="video.png" role="data" />
@@ -125,6 +127,23 @@
   </phprelease>
 
   <changelog>
+
+   <release>
+    <version>
+     <release>0.1.7</release>
+     <api>0.1.0</api>
+    </version>
+    <stability>
+     <release>beta</release>
+     <api>beta</api>
+    </stability>
+    <license uri="http://www.symfony-project.org/license">MIT license</license>
+    <date>2010-01-18</date>
+    <license>MIT</license>
+    <notes>
+     * icons added
+    </notes>
+   </release>
 
    <release>
     <version>

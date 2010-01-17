@@ -2,10 +2,10 @@
 
 #sf_admin_container ul li.sf_admin_action_activate a
 {
-  background: url(/tdCorePlugin/images/icons/16x16/activate.png) no-repeat 0 0;
+  background: url(/tdCorePlugin/images/icons/small/activate.png) no-repeat 0 0;
 }
 
 #sf_admin_container ul li.sf_admin_action_deactivate a
 {
-  background: url(/tdCorePlugin/images/icons/16x16/deactivate.png) no-repeat 0 0;
+  background: url(/tdCorePlugin/images/icons/small/deactivate.png) no-repeat 0 0;
 }

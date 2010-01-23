@@ -43,20 +43,20 @@
            <file name="add.png" role="data" />
            <file name="attach.png" role="data" />
            <file name="audio.png" role="data" />
+           <file name="book.png" role="data" />
            <file name="chart.png" role="data" />
            <file name="config.png" role="data" />
            <file name="deactivate.png" role="data" />
-           <file name="dictionary.png" role="data" />
            <file name="folder-audio.png" role="data" />
            <file name="folder-image.png" role="data" />
            <file name="folder-video.png" role="data" />
-           <file name="guestbook.png" role="data" />
            <file name="image.png" role="data" />
            <file name="link.png" role="data" />
            <file name="lock.png" role="data" />
            <file name="media.png" role="data" />
            <file name="newsletter.png" role="data" />
            <file name="noise.png" role="data" />
+           <file name="notebook.png" role="data" />
            <file name="notes.png" role="data" />
            <file name="palette.png" role="data" />
            <file name="preferences.png" role="data" />
@@ -73,20 +73,20 @@
              <file name="add.png" role="data" />
              <file name="attach.png" role="data" />
              <file name="audio.png" role="data" />
+             <file name="book.png" role="data" />
              <file name="chart.png" role="data" />
              <file name="config.png" role="data" />
              <file name="deactivate.png" role="data" />
-             <file name="dictionary.png" role="data" />
              <file name="folder-audio.png" role="data" />
              <file name="folder-image.png" role="data" />
              <file name="folder-video.png" role="data" />
-             <file name="guestbook.png" role="data" />
              <file name="image.png" role="data" />
              <file name="link.png" role="data" />
              <file name="lock.png" role="data" />
              <file name="media.png" role="data" />
              <file name="newsletter.png" role="data" />
              <file name="noise.png" role="data" />
+             <file name="notebook.png" role="data" />
              <file name="notes.png" role="data" />
              <file name="palette.png" role="data" />
              <file name="preferences.png" role="data" />

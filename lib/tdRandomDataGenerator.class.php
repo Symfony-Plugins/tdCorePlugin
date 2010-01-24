@@ -8,8 +8,8 @@
  * @package    tdCorePlugin
  * @author     Tomasz Ducin <tomasz.ducin@gmail.com>
  */
-class tdRandomDataGenerator {
-
+class tdRandomDataGenerator
+{
   /**
    * All letters.
    *

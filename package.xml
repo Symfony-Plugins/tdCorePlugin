@@ -10,7 +10,7 @@
   <email>tomasz.ducin@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-02-07</date>
+ <date>2010-02-24</date>
  <time>11:00:00</time>
  <version>
    <release>0.1.9</release>
@@ -25,6 +25,10 @@
 
  <contents>
    <dir name="/">
+
+     <dir name="config">
+       <file name="tdCorePluginConfiguration.class.php" role="data" />
+     </dir>
 
      <dir name="lib">
        <file name="tdRandomDataGenerator.class.php" role="data" />
@@ -147,10 +151,10 @@
      <api>beta</api>
     </stability>
     <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-02-07</date>
+    <date>2010-02-24</date>
     <license>MIT</license>
     <notes>
-     * NOT RELEASED YET
+     * added short description sign count config option for all child plugins
      * icons added
     </notes>
    </release>

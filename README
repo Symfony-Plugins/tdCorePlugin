@@ -37,6 +37,13 @@ Usage
         [php]
         stylesheets:    [ /tdCorePlugin/css/td_admin.css ]
 
+Configuration
+=============
+
+  * _td_short_text_sign_count_ - character count of a short descrtiption of any
+    kind of object used among admin generators (used by tdGuestbookPlugin,
+    tdAudioPlugin, tdVideoPlugin and so on)
+
 sfAdminDashPlugin compatibility
 ===============================
 

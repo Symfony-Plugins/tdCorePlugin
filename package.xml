@@ -36,12 +36,14 @@
       </dir>
 
       <dir name="modules">
-        <dir name="actions">
-          <file name="actions.class.php" role="data" />
-        </dir>
-        <dir name="templates">
-          <file name="emptySuccess.php" role="data" />
-          <file name="tickSuccess.php" role="data" />
+        <dir name="graphics">
+          <dir name="actions">
+            <file name="actions.class.php" role="data" />
+          </dir>
+          <dir name="templates">
+            <file name="emptySuccess.php" role="data" />
+            <file name="tickSuccess.php" role="data" />
+          </dir>
         </dir>
       </dir>
 

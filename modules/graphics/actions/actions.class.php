@@ -5,7 +5,7 @@
  *
  * @package    optiner-admin
  * @subpackage graphics
- * @author     Tomasz Ducin <tomasz.ducin@gmail.pl>
+ * @author     Tomasz Ducin <tomasz.ducin@gmail.com>
  * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
 class graphicsActions extends sfActions

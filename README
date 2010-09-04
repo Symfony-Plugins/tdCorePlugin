@@ -65,6 +65,16 @@ you need to do the following:
                 url: newsletter
                 image: newsletter.png
 
+AJAX backend interface
+======================
+
+Some of TD CMF plugins use AJAX actions to provide user-friendly interface
+(such as tdGuestbookPlugin). Enable the graphics module from tdCorePlugin to
+enable AJAX actions in other plugins to run correctly:
+
+        [php]
+        enabled_modules: [ ..., graphics ]
+
 Random Data Generator
 =====================
 

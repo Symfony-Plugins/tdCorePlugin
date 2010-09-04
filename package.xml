@@ -4,136 +4,146 @@
   <channel>plugins.symfony-project.org</channel>
   <summary>Provides basic functionalities enabling TD CMF.</summary>
   <description>Provides basic functionalities enabling TD CMF, such as common configuration or random data generation.</description>
- <lead>
-  <name>Tomasz Ducin</name>
-  <user>tkoomzaaskz</user>
-  <email>tomasz.ducin@gmail.com</email>
-  <active>yes</active>
- </lead>
- <date>2010-02-24</date>
- <time>11:00:00</time>
- <version>
-   <release>0.1.9</release>
-   <api>0.1.0</api>
- </version>
- <stability>
- <release>beta</release>
- <api>beta</api>
- </stability>
+  <lead>
+    <name>Tomasz Ducin</name>
+    <user>tkoomzaaskz</user>
+    <email>tomasz.ducin@gmail.com</email>
+    <active>yes</active>
+  </lead>
+  <date>2010-09-04</date>
+  <time>11:00:00</time>
+  <version>
+    <release>0.1.10</release>
+    <api>0.1.0</api>
+  </version>
+  <stability>
+    <release>beta</release>
+    <api>beta</api>
+  </stability>
   <license uri="http://www.symfony-project.com/license">MIT</license>
   <notes>-</notes>
 
- <contents>
-   <dir name="/">
+  <contents>
+    <dir name="/">
 
-     <dir name="config">
-       <file name="tdCorePluginConfiguration.class.php" role="data" />
-     </dir>
+      <dir name="config">
+        <file name="tdCorePluginConfiguration.class.php" role="data" />
+      </dir>
 
-     <dir name="lib">
-       <file name="tdRandomDataGenerator.class.php" role="data" />
-       <file name="tdTools.class.php" role="data" />
-     </dir>
+      <dir name="lib">
+        <file name="tdRandomDataGenerator.class.php" role="data" />
+        <file name="tdTools.class.php" role="data" />
+      </dir>
 
-     <dir name="web">
-       <dir name="images">
-         <dir name="pagination">
-           <file name="first.png" role="data" />
-           <file name="previous.png" role="data" />
-           <file name="next.png" role="data" />
-           <file name="last.png" role="data" />
-         </dir>
-         <dir name="icons">
-           <file name="activate.png" role="data" />
-           <file name="add.png" role="data" />
-           <file name="attach.png" role="data" />
-           <file name="audio.png" role="data" />
-           <file name="book.png" role="data" />
-           <file name="chart.png" role="data" />
-           <file name="config.png" role="data" />
-           <file name="deactivate.png" role="data" />
-           <file name="folder-audio.png" role="data" />
-           <file name="folder-image.png" role="data" />
-           <file name="folder-video.png" role="data" />
-           <file name="frontpage.png" role="data" />
-           <file name="image.png" role="data" />
-           <file name="link.png" role="data" />
-           <file name="lock.png" role="data" />
-           <file name="media.png" role="data" />
-           <file name="newsletter.png" role="data" />
-           <file name="noise.png" role="data" />
-           <file name="notebook.png" role="data" />
-           <file name="notes.png" role="data" />
-           <file name="palette.png" role="data" />
-           <file name="preferences.png" role="data" />
-           <file name="remove.png" role="data" />
-           <file name="rocket.png" role="data" />
-           <file name="stats.png" role="data" />
-           <file name="task-list.png" role="data" />
-           <file name="text.png" role="data" />
-           <file name="unlock.png" role="data" />
-           <file name="users.png" role="data" />
-           <file name="video.png" role="data" />
-           <dir name="small">
-             <file name="activate.png" role="data" />
-             <file name="add.png" role="data" />
-             <file name="attach.png" role="data" />
-             <file name="audio.png" role="data" />
-             <file name="book.png" role="data" />
-             <file name="chart.png" role="data" />
-             <file name="config.png" role="data" />
-             <file name="deactivate.png" role="data" />
-             <file name="folder-audio.png" role="data" />
-             <file name="folder-image.png" role="data" />
-             <file name="folder-video.png" role="data" />
-             <file name="frontpage.png" role="data" />
-             <file name="image.png" role="data" />
-             <file name="link.png" role="data" />
-             <file name="lock.png" role="data" />
-             <file name="media.png" role="data" />
-             <file name="newsletter.png" role="data" />
-             <file name="noise.png" role="data" />
-             <file name="notebook.png" role="data" />
-             <file name="notes.png" role="data" />
-             <file name="palette.png" role="data" />
-             <file name="preferences.png" role="data" />
-             <file name="remove.png" role="data" />
-             <file name="rocket.png" role="data" />
-             <file name="stats.png" role="data" />
-             <file name="task-list.png" role="data" />
-             <file name="text.png" role="data" />
-             <file name="unlock.png" role="data" />
-             <file name="users.png" role="data" />
-             <file name="video.png" role="data" />
-           </dir>
-         </dir>
-       </dir>
-       <dir name="css">
-         <file name="td_admin.css" role="data" />
-       </dir>
-     </dir>
+      <dir name="modules">
+        <dir name="actions">
+          <file name="actions.class.php" role="data" />
+        </dir>
+        <dir name="templates">
+          <file name="emptySuccess.php" role="data" />
+          <file name="tickSuccess.php" role="data" />
+        </dir>
+      </dir>
 
-     <file name="LICENSE" role="data" />
-     <file name="README" role="data" />
-   </dir>
- </contents>
+      <dir name="web">
+        <dir name="images">
+          <dir name="pagination">
+            <file name="first.png" role="data" />
+            <file name="previous.png" role="data" />
+            <file name="next.png" role="data" />
+            <file name="last.png" role="data" />
+          </dir>
+          <dir name="icons">
+            <file name="activate.png" role="data" />
+            <file name="add.png" role="data" />
+            <file name="attach.png" role="data" />
+            <file name="audio.png" role="data" />
+            <file name="book.png" role="data" />
+            <file name="chart.png" role="data" />
+            <file name="config.png" role="data" />
+            <file name="deactivate.png" role="data" />
+            <file name="folder-audio.png" role="data" />
+            <file name="folder-image.png" role="data" />
+            <file name="folder-video.png" role="data" />
+            <file name="frontpage.png" role="data" />
+            <file name="image.png" role="data" />
+            <file name="link.png" role="data" />
+            <file name="lock.png" role="data" />
+            <file name="media.png" role="data" />
+            <file name="newsletter.png" role="data" />
+            <file name="noise.png" role="data" />
+            <file name="notebook.png" role="data" />
+            <file name="notes.png" role="data" />
+            <file name="palette.png" role="data" />
+            <file name="preferences.png" role="data" />
+            <file name="remove.png" role="data" />
+            <file name="rocket.png" role="data" />
+            <file name="stats.png" role="data" />
+            <file name="task-list.png" role="data" />
+            <file name="text.png" role="data" />
+            <file name="unlock.png" role="data" />
+            <file name="users.png" role="data" />
+            <file name="video.png" role="data" />
+            <dir name="small">
+              <file name="activate.png" role="data" />
+              <file name="add.png" role="data" />
+              <file name="attach.png" role="data" />
+              <file name="audio.png" role="data" />
+              <file name="book.png" role="data" />
+              <file name="chart.png" role="data" />
+              <file name="config.png" role="data" />
+              <file name="deactivate.png" role="data" />
+              <file name="folder-audio.png" role="data" />
+              <file name="folder-image.png" role="data" />
+              <file name="folder-video.png" role="data" />
+              <file name="frontpage.png" role="data" />
+              <file name="image.png" role="data" />
+              <file name="link.png" role="data" />
+              <file name="lock.png" role="data" />
+              <file name="media.png" role="data" />
+              <file name="newsletter.png" role="data" />
+              <file name="noise.png" role="data" />
+              <file name="notebook.png" role="data" />
+              <file name="notes.png" role="data" />
+              <file name="palette.png" role="data" />
+              <file name="preferences.png" role="data" />
+              <file name="remove.png" role="data" />
+              <file name="rocket.png" role="data" />
+              <file name="stats.png" role="data" />
+              <file name="task-list.png" role="data" />
+              <file name="text.png" role="data" />
+              <file name="unlock.png" role="data" />
+              <file name="users.png" role="data" />
+              <file name="video.png" role="data" />
+            </dir>
+          </dir>
+        </dir>
+        <dir name="css">
+          <file name="td_admin.css" role="data" />
+        </dir>
+      </dir>
+
+      <file name="LICENSE" role="data" />
+      <file name="README" role="data" />
+    </dir>
+  </contents>
 
   <dependencies>
-   <required>
-    <php>
-     <min>5.1.0</min>
-    </php>
-    <pearinstaller>
-     <min>1.4.1</min>
-    </pearinstaller>
-    <package>
-     <name>symfony</name>
-     <channel>pear.symfony-project.com</channel>
-     <min>1.3.0</min>
-     <max>1.5.0</max>
-     <exclude>1.5.0</exclude>
-    </package>
-   </required>
+    <required>
+      <php>
+        <min>5.1.0</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.1</min>
+      </pearinstaller>
+      <package>
+        <name>symfony</name>
+        <channel>pear.symfony-project.com</channel>
+        <min>1.3.0</min>
+        <max>1.5.0</max>
+        <exclude>1.5.0</exclude>
+      </package>
+    </required>
   </dependencies>
 
   <phprelease>
@@ -141,182 +151,199 @@
 
   <changelog>
 
-   <release>
-    <version>
-     <release>0.1.9</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-02-24</date>
-    <license>MIT</license>
-    <notes>
-     * added short description sign count config option for all child plugins
-     * icons added
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.10</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-09-04</date>
+      <license>MIT</license>
+      <notes>
+        * added graphics module to enable AJAX interface in child TD CMF plugins
+      </notes>
+    </release>
 
-   <release>
-    <version>
-     <release>0.1.8</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-01-24</date>
-    <license>MIT</license>
-    <notes>
-     * tools class added
-     * css improved
-     * icons added
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.9</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-02-24</date>
+      <license>MIT</license>
+      <notes>
+        * added short description sign count config option for all child plugins
+        * icons added
+      </notes>
+    </release>
 
-   <release>
-    <version>
-     <release>0.1.7</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-01-18</date>
-    <license>MIT</license>
-    <notes>
-     * icons added
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.8</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-01-24</date>
+      <license>MIT</license>
+      <notes>
+        * tools class added
+        * css improved
+        * icons added
+      </notes>
+    </release>
 
-   <release>
-    <version>
-     <release>0.1.6</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-01-17</date>
-    <license>MIT</license>
-    <notes>
-     * pagination images added
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.7</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-01-18</date>
+      <license>MIT</license>
+      <notes>
+        * icons added
+      </notes>
+    </release>
 
-   <release>
-    <version>
-     <release>0.1.5</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-01-16</date>
-    <license>MIT</license>
-    <notes>
-     * sfAdminDashPlugin icons support reorganized
-     * more icons added
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.6</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-01-17</date>
+      <license>MIT</license>
+      <notes>
+        * pagination images added
+      </notes>
+    </release>
 
-   <release>
-    <version>
-     <release>0.1.4</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-01-03</date>
-    <license>MIT</license>
-    <notes>
-     * fixed random timestamp data generation bug
-     * more icons added
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.5</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-01-16</date>
+      <license>MIT</license>
+      <notes>
+        * sfAdminDashPlugin icons support reorganized
+        * more icons added
+      </notes>
+    </release>
 
-   <release>
-    <version>
-     <release>0.1.3</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-01-02</date>
-    <license>MIT</license>
-    <notes>
-     * compatibility with sfAdminDashPlugin
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.4</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-01-03</date>
+      <license>MIT</license>
+      <notes>
+        * fixed random timestamp data generation bug
+        * more icons added
+      </notes>
+    </release>
 
-   <release>
-    <version>
-     <release>0.1.2</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2010-01-02</date>
-    <license>MIT</license>
-    <notes>
-     * support for admin generators: assets
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.3</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-01-02</date>
+      <license>MIT</license>
+      <notes>
+        * compatibility with sfAdminDashPlugin
+      </notes>
+    </release>
 
-   <release>
-    <version>
-     <release>0.1.1</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2009-12-31</date>
-    <license>MIT</license>
-    <notes>
-     * fixed random numbers generating
-     * upgraded text generation
-     * updated documentation
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.2</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-01-02</date>
+      <license>MIT</license>
+      <notes>
+        * support for admin generators: assets
+      </notes>
+    </release>
 
-   <release>
-    <version>
-     <release>0.1.0</release>
-     <api>0.1.0</api>
-    </version>
-    <stability>
-     <release>beta</release>
-     <api>beta</api>
-    </stability>
-    <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2009-12-28</date>
-    <license>MIT</license>
-    <notes>
-     * initial import
-    </notes>
-   </release>
+    <release>
+      <version>
+        <release>0.1.1</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2009-12-31</date>
+      <license>MIT</license>
+      <notes>
+        * fixed random numbers generating
+        * upgraded text generation
+        * updated documentation
+      </notes>
+    </release>
+
+    <release>
+      <version>
+        <release>0.1.0</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2009-12-28</date>
+      <license>MIT</license>
+      <notes>
+        * initial import
+      </notes>
+    </release>
 
   </changelog>
 

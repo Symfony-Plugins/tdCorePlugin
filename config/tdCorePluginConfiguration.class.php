@@ -9,7 +9,6 @@
  * @package   tdCorePlugin
  * @author    Tomasz Ducin <tomasz.ducin@gmail.com>
  */
-
 class tdCorePluginConfiguration extends sfPluginConfiguration
 {
   /**
@@ -19,5 +18,7 @@ class tdCorePluginConfiguration extends sfPluginConfiguration
   {
     // short description sign count
     sfConfig::set('td_short_text_sign_count', 200);
+
+    $this->dispatcher->connect('template.filter_parameters', array('tdBreadcrumb', 'filterTemplateParameters'));
   }
 }

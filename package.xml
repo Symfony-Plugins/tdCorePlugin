@@ -3,18 +3,18 @@
   <name>tdCorePlugin</name>
   <channel>plugins.symfony-project.org</channel>
   <summary>Provides basic functionalities enabling TD CMF.</summary>
-  <description>Provides basic functionalities enabling TD CMF, such as common configuration or random data generation.</description>
+  <description>Provides basic functionalities enabling TD CMF, such as common configuration random data generation or breadcrumbs.</description>
   <lead>
     <name>Tomasz Ducin</name>
     <user>tkoomzaaskz</user>
     <email>tomasz.ducin@gmail.com</email>
     <active>yes</active>
   </lead>
-  <date>2010-09-04</date>
+  <date>2010-09-06</date>
   <time>11:00:00</time>
   <version>
-    <release>0.1.10</release>
-    <api>0.1.0</api>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
   </version>
   <stability>
     <release>beta</release>
@@ -33,6 +33,10 @@
       <dir name="lib">
         <file name="tdRandomDataGenerator.class.php" role="data" />
         <file name="tdTools.class.php" role="data" />
+        <dir name="breadcrumb">
+          <file name="tdBreadcrumb.class.php" role="data" />
+          <file name="tdBreadcrumbItem.class.php" role="data" />
+        </dir>
       </dir>
 
       <dir name="modules">
@@ -43,6 +47,17 @@
           <dir name="templates">
             <file name="emptySuccess.php" role="data" />
             <file name="tickSuccess.php" role="data" />
+          </dir>
+        </dir>
+        <dir name="tdBreadcrumb">
+          <dir name="actions">
+            <file name="components.class.php" role="data" />
+          </dir>
+          <dir name="config">
+            <file name="cache.yml" role="data" />
+          </dir>
+          <dir name="templates">
+            <file name="_display.php" role="data" />
           </dir>
         </dir>
       </dir>
@@ -152,6 +167,23 @@
   </phprelease>
 
   <changelog>
+
+    <release>
+      <version>
+        <release>0.2.0</release>
+        <api>0.2.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-09-06</date>
+      <license>MIT</license>
+      <notes>
+        * added breadcrumb managing module
+      </notes>
+    </release>
 
     <release>
       <version>

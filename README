@@ -74,6 +74,13 @@ enable AJAX actions in other plugins to run correctly:
 
     enabled_modules: [ ..., graphics ]
 
+Breadcrumbs
+===========
+
+Enable the tdBreadcrumb module:
+
+    enabled_modules: [ ..., tdBreadcrumb ]
+
 Random Data Generator
 =====================
 

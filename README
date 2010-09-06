@@ -77,9 +77,53 @@ enable AJAX actions in other plugins to run correctly:
 Breadcrumbs
 ===========
 
-Enable the tdBreadcrumb module:
+This part is based on _isicsBreadcrumbsPlugin_. It includes a singleton managing
+breadcrumb items. Displaying breadcrumbs is done using a component. At first,
+enable the tdBreadcrumb module:
 
     enabled_modules: [ ..., tdBreadcrumb ]
+
+Define the path in your templates:
+
+    [plain]
+    <?php $breadcrumbs->addItem('My action', 'myModule/myAction') ?>
+
+    => Home > My action
+
+If the action is deeper:
+
+    [plain]
+    <?php $breadcrumbs->addItem('My previous action', 'myModule/myPreviousAction') ?>
+    <?php $breadcrumbs->addItem('My action', 'myModule/myAction') ?>
+
+    => Home > My previous action > My action
+
+Define the path in your actions:
+
+    [plain]
+    public function executeMyAction()
+    {
+      tdBreadcrumb::getInstance()->addItem('My action', 'myModule/myAction');
+
+    => Home > My action
+
+Include the breadcrumbs component (in the layout for instance):
+
+    [plain]
+    <p id="breadcrumbs">
+      You are here :
+      <?php include_component('tdBreadcrumb', 'show') ?>
+    </p>
+
+You can set your own root:
+
+    [plain]
+    <p id="breadcrumbs">
+      You are here :
+      <?php include_component('tdBreadcrumb', 'show', array(
+        'root' => array('text' => 'Home', 'uri' => '@myHomepage')
+      )) ?>
+    </p>
 
 Random Data Generator
 =====================

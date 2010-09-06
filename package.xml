@@ -10,11 +10,11 @@
     <email>tomasz.ducin@gmail.com</email>
     <active>yes</active>
   </lead>
-  <date>2010-09-06</date>
+  <date>2010-09-07</date>
   <time>11:00:00</time>
   <version>
-    <release>0.2.0</release>
-    <api>0.2.0</api>
+    <release>0.2.1</release>
+    <api>0.2.1</api>
   </version>
   <stability>
     <release>beta</release>
@@ -170,8 +170,8 @@
 
     <release>
       <version>
-        <release>0.2.0</release>
-        <api>0.2.0</api>
+        <release>0.2.1</release>
+        <api>0.2.1</api>
       </version>
       <stability>
         <release>beta</release>
@@ -181,7 +181,8 @@
       <date>2010-09-06</date>
       <license>MIT</license>
       <notes>
-        * added breadcrumb managing module
+        * added static pages model and module
+        * improved readme for breadcrumbs
       </notes>
     </release>
 

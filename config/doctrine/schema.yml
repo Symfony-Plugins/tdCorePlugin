@@ -1,0 +1,35 @@
+options:
+  collate: utf8_general_ci
+  charset: utf8
+
+tdSubpage:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+    content:
+      type: string
+      notnull: true
+    active:
+      type: boolean
+      notnull: true
+      default: true
+
+tdConfig:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(64)
+      notnull: true
+    value:
+      type: string
+      notnull: true
+    description:
+      type: string
+  indexes:
+    name_unique:
+      fields: [ name ]
+      type: unique

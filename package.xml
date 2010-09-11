@@ -10,7 +10,7 @@
     <email>tomasz.ducin@gmail.com</email>
     <active>yes</active>
   </lead>
-  <date>2010-09-07</date>
+  <date>2010-09-09</date>
   <time>11:00:00</time>
   <version>
     <release>0.2.1</release>
@@ -28,15 +28,43 @@
 
       <dir name="config">
         <file name="tdCorePluginConfiguration.class.php" role="data" />
+        <file name="routing.yml" role="data" />
+        <dir name="doctrine">
+          <file name="schema.yml" role="data" />
+        </dir>
       </dir>
 
       <dir name="lib">
-        <file name="tdRandomDataGenerator.class.php" role="data" />
-        <file name="tdTools.class.php" role="data" />
+        <file name="fixtures.yml" role="data" />
+      </dir>
+
+      <dir name="lib">
         <dir name="breadcrumb">
           <file name="tdBreadcrumb.class.php" role="data" />
           <file name="tdBreadcrumbItem.class.php" role="data" />
         </dir>
+        <dir name="filter">
+          <dir name="doctrine">
+            <file name="PlugintdConfigFormFilter.class.php" role="data" />
+            <file name="PlugintdSubpageFormFilter.class.php" role="data" />
+          </dir>
+        </dir>
+        <dir name="form">
+          <dir name="doctrine">
+            <file name="PlugintdConfigForm.class.php" role="data" />
+            <file name="PlugintdSubpageForm.class.php" role="data" />
+          </dir>
+        </dir>
+        <dir name="model">
+          <dir name="doctrine">
+            <file name="PlugintdConfig.class.php" role="data" />
+            <file name="PlugintdConfigTable.class.php" role="data" />
+            <file name="PlugintdSubpage.class.php" role="data" />
+            <file name="PlugintdSubpageTable.class.php" role="data" />
+          </dir>
+        </dir>
+        <file name="tdRandomDataGenerator.class.php" role="data" />
+        <file name="tdTools.class.php" role="data" />
       </dir>
 
       <dir name="modules">
@@ -58,6 +86,37 @@
           </dir>
           <dir name="templates">
             <file name="_display.php" role="data" />
+          </dir>
+        </dir>
+        <dir name="tdConfig">
+          <dir name="actions">
+            <file name="actions.class.php" role="data" />
+          </dir>
+          <dir name="config">
+            <file name="generator.yml" role="data" />
+          </dir>
+          <dir name="lib">
+            <file name="tdConfigGeneratorConfiguration.class" role="data" />
+            <file name="tdConfigGeneratorHelper.class" role="data" />
+          </dir>
+          <dir name="templates" />
+        </dir>
+        <dir name="tdSubpage">
+          <dir name="actions">
+            <file name="actions.class.php" role="data" />
+          </dir>
+          <dir name="config">
+            <file name="generator.yml" role="data" />
+          </dir>
+          <dir name="lib">
+            <file name="tdSubpageGeneratorConfiguration.class" role="data" />
+            <file name="tdSubpageGeneratorHelper.class" role="data" />
+          </dir>
+          <dir name="templates">
+            <file name="_ajax_activate.php" role="data" />
+            <file name="_ajax_deactivate.php" role="data" />
+            <file name="_ajax_main_active.php" role="data" />
+            <file name="_list_td_actions.php" role="data" />
           </dir>
         </dir>
       </dir>
@@ -178,10 +237,10 @@
         <api>beta</api>
       </stability>
       <license uri="http://www.symfony-project.org/license">MIT license</license>
-      <date>2010-09-06</date>
+      <date>2010-09-09</date>
       <license>MIT</license>
       <notes>
-        * added static pages model and module
+        * added model and modules for subpages and configuration
         * improved readme for breadcrumbs
       </notes>
     </release>

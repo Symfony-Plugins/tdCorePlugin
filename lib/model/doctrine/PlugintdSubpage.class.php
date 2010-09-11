@@ -31,4 +31,32 @@ abstract class PlugintdSubpage extends BasetdSubpage
   {
     return strip_tags(tdTools::getMbShortenedString($this->getContent(), 400));
   }
+
+  /**
+   * Returns subpage title used as HTML/title.
+   *
+   * @return String - subpage title.
+   */
+  public function getTitle()
+  {
+    return tdTools::getProjectName().' - '.$this->getName();
+  }
+
+  /**
+   * Activates subpage (and saves itself afterwards).
+   */
+  public function activate()
+  {
+    $this->setActive(true);
+    $this->save();
+  }
+
+  /**
+   * Deactivates subpage (and saves itself afterwards).
+   */
+  public function deactivate()
+  {
+    $this->setActive(false);
+    $this->save();
+  }
 }

@@ -7,13 +7,39 @@
  */
 class PlugintdSubpageTable extends Doctrine_Table
 {
-    /**
-     * Returns an instance of this class.
-     *
-     * @return object PlugintdSubpageTable
-     */
-    public static function getInstance()
-    {
-        return Doctrine_Core::getTable('PlugintdSubpage');
-    }
+  /**
+   * Returns an instance of this class.
+   *
+   * @return object PlugintdSubpageTable
+   */
+  public static function getInstance()
+  {
+    return Doctrine_Core::getTable('PlugintdSubpage');
+  }
+
+  /**
+   * Returns a query retrieving a subpage given by the id.
+   *
+   * @param Integer $id - subpage id.
+   * @return Doctrine_Query - query retrieving a subpage.
+   */
+  public function getActiveSubpageByIdQuery($id)
+  {
+    return $this->createQuery('s')
+      ->where('s.active = 1')
+      ->andWhere('s.id = ?', $id);
+  }
+
+  /**
+   * Returns query retrieving subpage given by id.
+   *
+   * @param Integer $id - subpage id.
+   * @return Doctrine_Query - query retrieving subpage given by id.
+   */
+  static public function getSubpageByIdQuery($id)
+  {
+    return Doctrine_Query::create()
+      ->from('tdSubpage s')
+      ->where('s.id = ?', $id);
+  }
 }

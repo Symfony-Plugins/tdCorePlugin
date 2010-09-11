@@ -21,10 +21,10 @@ class tdSubpageActions extends autoTdSubpageActions
    */
   public function executeActivate(sfWebRequest $request)
   {
-    $subpage = SubpageTable::getSubpageByIdQuery($request->getParameter('id'))->fetchOne();
-    $subpage->activate();
+    $td_subpage = tdSubpageTable::getSubpageByIdQuery($request->getParameter('id'))->fetchOne();
+    $td_subpage->activate();
 
-    return $this->renderPartial('subpage/ajax_deactivate', array('subpage' => $subpage));
+    return $this->renderPartial('tdSubpage/ajax_deactivate', array('td_subpage' => $td_subpage));
   }
 
   /**
@@ -35,9 +35,9 @@ class tdSubpageActions extends autoTdSubpageActions
    */
   public function executeDeactivate(sfWebRequest $request)
   {
-    $subpage = SubpageTable::getSubpageByIdQuery($request->getParameter('id'))->fetchOne();
-    $subpage->deactivate();
+    $td_subpage = tdSubpageTable::getSubpageByIdQuery($request->getParameter('id'))->fetchOne();
+    $td_subpage->deactivate();
 
-    return $this->renderPartial('subpage/ajax_activate', array('subpage' => $subpage));
+    return $this->renderPartial('tdSubpage/ajax_activate', array('td_subpage' => $td_subpage));
   }
 }

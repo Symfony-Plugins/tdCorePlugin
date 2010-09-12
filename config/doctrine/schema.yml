@@ -25,7 +25,7 @@ tdLink:
       type: string(255)
       notnull: true
     description:
-      type: text
+      type: string
       notnull: true
     active:
       type: boolean

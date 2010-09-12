@@ -10,4 +10,10 @@
  */
 abstract class PlugintdLinkForm extends BasetdLinkForm
 {
+  public function setup()
+  {
+    parent::setup();
+    unset($this['created_at'], $this['updated_at']);
+  }
 }
+

@@ -13,8 +13,8 @@
   <date>2010-09-12</date>
   <time>11:00:00</time>
   <version>
-    <release>0.2.1</release>
-    <api>0.2.1</api>
+    <release>0.2.2</release>
+    <api>0.2.2</api>
   </version>
   <stability>
     <release>beta</release>
@@ -229,6 +229,23 @@
   </phprelease>
 
   <changelog>
+
+    <release>
+      <version>
+        <release>0.2.2</release>
+        <api>0.2.2</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <date>2010-09-13</date>
+      <license>MIT</license>
+      <notes>
+        * improving tdSubpage SEO
+      </notes>
+    </release>
 
     <release>
       <version>

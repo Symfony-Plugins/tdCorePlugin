@@ -22,6 +22,7 @@ class tdSubpageActions extends autoTdSubpageActions
   {
     $this->setVar('td_subpage', tdSubpageTable::getSubpageByIdQuery($request->getParameter('id'))->fetchOne(), true);
     $this->forward404If(!$this->td_subpage, 'Strona nie istnieje');
+    $this->getResponse()->setTitle($this->td_subpage->getTitle());
   }
 
   /**

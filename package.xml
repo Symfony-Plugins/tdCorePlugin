@@ -10,7 +10,7 @@
     <email>tomasz.ducin@gmail.com</email>
     <active>yes</active>
   </lead>
-  <date>2010-09-09</date>
+  <date>2010-09-12</date>
   <time>11:00:00</time>
   <version>
     <release>0.2.1</release>
@@ -34,8 +34,11 @@
         </dir>
       </dir>
 
-      <dir name="lib">
-        <file name="fixtures.yml" role="data" />
+      <dir name="data">
+        <dir name="fixtures">
+          <file name="configs.yml" role="data" />
+          <file name="subpages.yml" role="data" />
+        </dir>
       </dir>
 
       <dir name="lib">
@@ -96,8 +99,8 @@
             <file name="generator.yml" role="data" />
           </dir>
           <dir name="lib">
-            <file name="tdConfigGeneratorConfiguration.class" role="data" />
-            <file name="tdConfigGeneratorHelper.class" role="data" />
+            <file name="tdConfigGeneratorConfiguration.class.php" role="data" />
+            <file name="tdConfigGeneratorHelper.class.php" role="data" />
           </dir>
           <dir name="templates" />
         </dir>
@@ -109,8 +112,8 @@
             <file name="generator.yml" role="data" />
           </dir>
           <dir name="lib">
-            <file name="tdSubpageGeneratorConfiguration.class" role="data" />
-            <file name="tdSubpageGeneratorHelper.class" role="data" />
+            <file name="tdSubpageGeneratorConfiguration.class.php" role="data" />
+            <file name="tdSubpageGeneratorHelper.class.php" role="data" />
           </dir>
           <dir name="templates">
             <file name="_ajax_activate.php" role="data" />
@@ -237,7 +240,7 @@
         <api>beta</api>
       </stability>
       <license uri="http://www.symfony-project.org/license">MIT license</license>
-      <date>2010-09-09</date>
+      <date>2010-09-12</date>
       <license>MIT</license>
       <notes>
         * added model and modules for subpages and configuration

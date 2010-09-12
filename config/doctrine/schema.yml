@@ -17,6 +17,24 @@ tdSubpage:
       notnull: true
       default: true
 
+tdLink:
+  actAs:
+    Timestampable: ~
+  columns:
+    url:
+      type: string(255)
+      notnull: true
+    description:
+      type: text
+      notnull: true
+    active:
+      type: boolean
+      default: true
+      notnull: true
+  indexes:
+    active_index:
+      fields: [ active ]
+
 tdConfig:
   actAs:
     Timestampable: ~

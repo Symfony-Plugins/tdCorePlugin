@@ -23,6 +23,35 @@ tdSubpage_ajax_deactivate:
   requirements:
     id: \d+
 
+########################################
+
+tdLink:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tdLink
+    module:               tdLink
+    prefix_path:          /tdLink
+    column:               id
+    with_wildcard_routes: true
+
+tdLink_display:
+  url:   /link-display
+  param: { module: tdLink, action: display }
+
+tdLink_ajax_activate:
+  url:   /td_ajax_link_activate/:id
+  param: { module: tdLink, action: activate }
+  requirements:
+    id: \d+
+
+tdLink_ajax_deactivate:
+  url:   /td_ajax_link_deactivate/:id
+  param: { module: tdLink, action: deactivate }
+  requirements:
+    id: \d+
+
+########################################
+
 tdConfig:
   class: sfDoctrineRouteCollection
   options:

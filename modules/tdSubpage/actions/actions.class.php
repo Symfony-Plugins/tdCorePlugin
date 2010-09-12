@@ -13,6 +13,17 @@ require_once dirname(__FILE__).'/../lib/tdSubpageGeneratorHelper.class.php';
  */
 class tdSubpageActions extends autoTdSubpageActions
 {
+ /**
+  * Shows a single tdSubpage which is given by the 'heading' parameter.
+  *
+  * @param sfRequest A request object
+  */
+  public function executeShow(sfWebRequest $request)
+  {
+    $this->setVar('td_subpage', tdSubpageTable::getSubpageByIdQuery($request->getParameter('id'))->fetchOne(), true);
+    $this->forward404If(!$this->td_subpage, 'Strona nie istnieje');
+  }
+
   /**
    * Activates a subpage from admin generator list using AJAX.
    *

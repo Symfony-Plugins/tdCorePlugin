@@ -7,13 +7,17 @@ tdSubpage:
     column:               id
     with_wildcard_routes: true
 
-td_ajax_subpage_activate:
+tdSubpage_show:
+  url:   /subpage/:id/:name
+  param: { module: tdSubpage, action: show }
+
+tdSubpage_ajax_activate:
   url:   /td_ajax_subpage_activate/:id
   param: { module: tdSubpage, action: activate }
   requirements:
     id: \d+
 
-td_ajax_subpage_deactivate:
+tdSubpage_ajax_deactivate:
   url:   /td_ajax_subpage_deactivate/:id
   param: { module: tdSubpage, action: deactivate }
   requirements:

@@ -29,7 +29,7 @@ abstract class PlugintdSubpage extends BasetdSubpage
    */
   public function getContentShort()
   {
-    return strip_tags(tdTools::getMbShortenedString($this->getContent(), 400));
+    return strip_tags(tdTools::getMbShortenedString($this->getContent(), sfConfig::get('td_short_text_sign_count')));
   }
 
   /**

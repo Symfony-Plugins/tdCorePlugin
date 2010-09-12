@@ -17,7 +17,7 @@ class tdCorePluginConfiguration extends sfPluginConfiguration
   public function initialize()
   {
     // short description sign count
-    sfConfig::set('td_short_text_sign_count', 200);
+    sfConfig::set('td_short_text_sign_count', 500);
 
     $this->dispatcher->connect('template.filter_parameters', array('tdBreadcrumb', 'filterTemplateParameters'));
   }

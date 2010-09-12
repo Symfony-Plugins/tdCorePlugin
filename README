@@ -1,13 +1,26 @@
-tdCorePlugin
-============
+## table of contents
+
+*   [tdCorePlugin](#tdCorePlugin)
+*   [Installation](#installation)
+*   [Usage](#usage)
+*   [Configuration](#configuration)
+*   [tdConfig](#tdConfig)
+*   [tdSubpage](#tdSubpage)
+*   [Breadcrumbs](#breadcrumbs)
+*   [AJAX backend interface](#ajax_backend_interface)
+*   [sfAdminDashPlugin compatibility](#sfAdminDashPlugin)
+*   [Random Data Generator](#random_data_generator)
+
+<a name="tdCorePlugin">tdCorePlugin</a>
+==========================================
 
 The `tdCorePlugin` is a symfony plugin that provides basic functionalities
 enabling TD CMF, such as common configuration or random data generation.
 
 This plugin is a part of __TD CMF__ and is based on __Doctrine ORM__.
 
-Installation
-============
+<a name="installation">Installation</a>
+=======================================
 
 Install the plugin via the subversion repository by executing the following
 command from the project root directory:
@@ -25,8 +38,8 @@ the assets of tdCorePlugin:
 
 One of the assets is nice CSS file cooperating with other __TD CMF__ plugins.
 
-Usage
-=====
+<a name="usage">Usage</a>
+=========================
 
   * This plugin is the main part of the __TD CMF__ and therefore it should be
     installed as the first one. Other td components will use functionalities
@@ -37,51 +50,41 @@ Usage
         [php]
         stylesheets:    [ /tdCorePlugin/css/td_admin.css ]
 
-Configuration
-=============
+<a name="configuration">Configuration</a>
+=========================================
 
   * _td_short_text_sign_count_ - character count of a short descrtiption of any
-    kind of object used among admin generators (used by tdGuestbookPlugin,
-    tdAudioPlugin, tdVideoPlugin and so on)
+    kind of object used among admin generators (used by tdSubpage,
+    tdGuestbookPlugin, tdAudioPlugin, tdVideoPlugin and so on)
 
-sfAdminDashPlugin compatibility
+<a name="tdConfig">tdConfig</a>
 ===============================
 
-The icons provided with the plugin may be used for sfAdminDashPlugin. To do so,
-you need to do the following:
+tdConfig is a model representing dynamic configuration options in your symfony
+project. It is provided with the tdConfig backend module enabing easy
+configuration options management. Just enable the module in your
+__backend/config/settings.yml__ file:
 
-  * modify the __sfAdminDashPlugin/config/app.yml__ file, set:
+    enabled_modules: [ ... , tdConfig ]
 
-        [php]
-        image_dir: /tdCorePlugin/images/icons/
+<a name="tdSubpage">tdSubpage</a>
+=================================
 
-  * and finally you may use the icons in the app.yml file:
+tdSubpage is a model representing subpages in your symfony project. Enables easy
+management of pages with dynamic content. Use it in your frontend application -
+in actions, components and layout templates:
 
-        [php]
-        categories:
-          Administration:
-            items:
-              Newsletter:
-                url: newsletter
-                image: newsletter.png
+    [php]
+    url_for('@tdSubpage_show?id=1&name=about')
 
-AJAX backend interface
-======================
-
-Some of TD CMF plugins use AJAX actions to provide user-friendly interface
-(such as tdGuestbookPlugin). Enable the graphics module from tdCorePlugin to
-enable AJAX actions in other plugins to run correctly:
-
-    enabled_modules: [ ..., graphics ]
-
-Breadcrumbs
-===========
+<a name="breadcrumbs">Breadcrumbs</a>
+=====================================
 
 This part is based on _isicsBreadcrumbsPlugin_. It includes a singleton managing
 breadcrumb items. Displaying breadcrumbs is done using a component. At first,
 enable the tdBreadcrumb module:
 
-    enabled_modules: [ ..., tdBreadcrumb ]
+    enabled_modules: [ ... , tdBreadcrumb ]
 
 Define the path in your templates:
 
@@ -125,8 +128,41 @@ You can set your own root:
       )) ?>
     </p>
 
-Random Data Generator
-=====================
+<a name="ajax_backend_interface">AJAX backend interface</a>
+===========================================================
+
+Some of TD CMF plugins use AJAX actions to provide user-friendly interface
+(such as tdGuestbookPlugin). Enable the graphics module from tdCorePlugin to
+enable AJAX actions in other plugins to run correctly:
+
+    enabled_modules: [ ... , graphics ]
+
+More about __TD CFM__ AJAX backend feature in my [symfony developer
+blog](http://symfony-world.blogspot.com/2010/05/ajaxsymfony-easy-user-friendly-example.html "Ajax/symfony easy & user friendly example")
+
+<a name="sfAdminDashPlugin">sfAdminDashPlugin compatibility</a>
+===============================================================
+
+The icons provided with the plugin may be used for sfAdminDashPlugin. To do so,
+you need to do the following:
+
+  * modify the __sfAdminDashPlugin/config/app.yml__ file, set:
+
+        [php]
+        image_dir: /tdCorePlugin/images/icons/
+
+  * and finally you may use the icons in the app.yml file:
+
+        [php]
+        categories:
+          Administration:
+            items:
+              Newsletter:
+                url: newsletter
+                image: newsletter.png
+
+<a name="random_data_generator">Random Data Generator</a>
+=========================================================
 
 There is a class in the plugin responsible for generating some random data used
 for the symfony fixtures. During development phase its essential to see how some

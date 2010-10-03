@@ -23,7 +23,7 @@ class PlugintdSubpageTable extends Doctrine_Table
    * @param Integer $id - subpage id.
    * @return Doctrine_Query - query retrieving a subpage.
    */
-  public function getActiveSubpageByIdQuery($id)
+  public static function getActiveSubpageByIdQuery($id)
   {
     return $this->createQuery('s')
       ->where('s.active = 1')
@@ -36,7 +36,7 @@ class PlugintdSubpageTable extends Doctrine_Table
    * @param Integer $id - subpage id.
    * @return Doctrine_Query - query retrieving subpage given by id.
    */
-  static public function getSubpageByIdQuery($id)
+  public static function getSubpageByIdQuery($id)
   {
     return Doctrine_Query::create()
       ->from('tdSubpage s')

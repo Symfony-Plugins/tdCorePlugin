@@ -33,4 +33,33 @@ class tdTools
     $content = parse_ini_file($file, true);
     return $content['symfony']['name'];
   }
+
+  /**
+   * Returns a string with all polish characters replaced with latin ones.
+   *
+   * @param String $text - original text
+   * @return String - result text
+   */
+  static public function replacePolishWithLatin($text)
+  {
+    $orig = array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ż', 'ź',
+      'Ą', 'Ć', 'Ę', 'Ł', 'Ń', 'Ó', 'Ś', 'Ż', 'Ź');
+    $dest = array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z',
+      'A', 'C', 'E', 'L', 'N', 'O', 'S', 'Z', 'Z');
+    return str_replace($orig, $dest, $text);
+  }
+
+  /**
+   * Returns slug of a given text.
+   *
+   * @param String $text - original text
+   * @return String - result text
+   */
+  static public function slugify($text)
+  {
+    $text = self::replacePolishWithLatin($text);
+    $text = preg_replace('/\W+/', '-', $text);
+    $text = strtolower(trim($text, '-'));
+    return $text;
+  }
 }

@@ -13,6 +13,9 @@ abstract class PlugintdSubpageForm extends BasetdSubpageForm
   public function setup()
   {
     parent::setup();
+
+    $this->setWidget('slug', new sfWidgetFormInputHidden());
+    
     unset($this['created_at'], $this['updated_at']);
   }
 }

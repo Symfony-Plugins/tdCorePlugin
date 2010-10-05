@@ -8,8 +8,10 @@ tdSubpage:
     with_wildcard_routes: true
 
 tdSubpage_show:
-  url:   /subpage/:id/:name
-  param: { module: tdSubpage, action: show }
+  url:     /subpage/:slug
+  class:   sfDoctrineRoute
+  param:   { module: tdSubpage, action: show }
+  options: { model: tdSubpage, type: object }
 
 tdSubpage_ajax_activate:
   url:   /td_ajax_subpage_activate/:id

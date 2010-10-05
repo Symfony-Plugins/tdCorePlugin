@@ -70,12 +70,12 @@ __backend/config/settings.yml__ file:
 <a name="tdSubpage">tdSubpage</a>
 =================================
 
-tdSubpage is a model representing subpages in your symfony project. Enables easy
-management of pages with dynamic content. Use it in your frontend application -
-in actions, components and layout templates:
+tdSubpage is a Sluggable model representing subpages in your symfony project.
+Enables easy management of pages with dynamic content. Use it in your frontend
+application - in actions, components and layout templates:
 
     [php]
-    url_for('@tdSubpage_show?id=1&name=about')
+    link_to('Example Subpage', 'tdSubpage', $subpage)
 
 <a name="breadcrumbs">Breadcrumbs</a>
 =====================================

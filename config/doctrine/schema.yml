@@ -5,6 +5,9 @@ options:
 tdSubpage:
   actAs:
     Timestampable: ~
+    Sluggable:
+      fields: [ name ]
+      canUpdate: false
   columns:
     name:
       type: string(255)

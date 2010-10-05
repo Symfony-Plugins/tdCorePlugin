@@ -25,9 +25,24 @@ class PlugintdSubpageTable extends Doctrine_Table
    */
   public static function getActiveSubpageByIdQuery($id)
   {
-    return $this->createQuery('s')
+    return Doctrine_Query::create()
+      ->from('tdSubpage s')
       ->where('s.active = 1')
       ->andWhere('s.id = ?', $id);
+  }
+
+  /**
+   * Returns a query retrieving a subpage given by the slug.
+   *
+   * @param String $slug - subpage slug.
+   * @return Doctrine_Query - query retrieving a subpage.
+   */
+  public static function getActiveSubpageBySlugQuery($slug)
+  {
+    return Doctrine_Query::create()
+      ->from('tdSubpage s')
+      ->where('s.active = 1')
+      ->andWhere('s.slug = ?', $slug);
   }
 
   /**
@@ -41,5 +56,18 @@ class PlugintdSubpageTable extends Doctrine_Table
     return Doctrine_Query::create()
       ->from('tdSubpage s')
       ->where('s.id = ?', $id);
+  }
+
+  /**
+   * Returns query retrieving subpage given by slug.
+   *
+   * @param String $slug - subpage slug.
+   * @return Doctrine_Query - query retrieving subpage given by slug.
+   */
+  public static function getSubpageBySlugQuery($slug)
+  {
+    return Doctrine_Query::create()
+      ->from('tdSubpage s')
+      ->where('s.slug = ?', $slug);
   }
 }

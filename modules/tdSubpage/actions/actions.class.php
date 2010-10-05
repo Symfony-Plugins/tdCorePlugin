@@ -20,7 +20,7 @@ class tdSubpageActions extends autoTdSubpageActions
   */
   public function executeShow(sfWebRequest $request)
   {
-    $this->setVar('td_subpage', tdSubpageTable::getActiveSubpageByIdQuery($request->getParameter('id'))->fetchOne(), true);
+    $this->setVar('td_subpage', $this->getRoute()->getObject(), true);
     $this->forward404If(!$this->td_subpage, 'Strona nie istnieje');
     $this->getResponse()->setTitle($this->td_subpage->getTitle());
   }

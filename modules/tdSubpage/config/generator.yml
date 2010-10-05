@@ -31,7 +31,9 @@ generator:
         max_per_page: 20
         layout: stacked
         params: |
-          <h3>%%name%%</h3> <span id="subpage_visible_column_%%id_value%%">%%active%%</span>
+          <h3>%%name%%</h3>
+          <div style="font-style: italic;">/subpage/%%slug%%</div>
+          <span id="subpage_visible_column_%%id_value%%">%%active%%</span>
           %%content_short%%
 #        actions: []
         batch_actions:
@@ -44,7 +46,7 @@ generator:
           activate: ~
           deactivate: ~
       form:
-        display: [ name, content, active ]
+        display: [ name, slug, content, active ]
         fields:
           name:
             attributes: { size: 80 }

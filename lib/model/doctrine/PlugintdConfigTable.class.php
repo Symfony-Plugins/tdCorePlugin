@@ -25,7 +25,9 @@ class PlugintdConfigTable extends Doctrine_Table
    */
   static public function getConfigValue($value)
   {
-    $config = self::getInstance()->findBy('name', $value)->getFirst();
+    $config = Doctrine_Core::getTable('tdConfig')
+      ->findBy('name', $value)
+      ->getFirst();
     return $config['value'];
   }
 }

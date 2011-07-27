@@ -115,7 +115,7 @@ Include the breadcrumbs component (in the layout for instance):
     [plain]
     <p id="breadcrumbs">
       You are here :
-      <?php include_component('tdBreadcrumb', 'show') ?>
+      <?php include_component('tdBreadcrumb', 'display') ?>
     </p>
 
 You can set your own root:
@@ -123,7 +123,7 @@ You can set your own root:
     [plain]
     <p id="breadcrumbs">
       You are here :
-      <?php include_component('tdBreadcrumb', 'show', array(
+      <?php include_component('tdBreadcrumb', 'display', array(
         'root' => array('text' => 'Home', 'uri' => '@myHomepage')
       )) ?>
     </p>
